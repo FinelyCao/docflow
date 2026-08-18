@@ -7,7 +7,7 @@
 ## 架构
 
 ```
-Next.js UI  ──SSE──▶  /api/chat  ──▶  本地 Dify（/Users/caofan/dify）
+Next.js UI  ──SSE──▶  /api/chat  ──▶  本地 Dify
 文档库页     ──────▶  /api/documents ──▶  Dify 知识库 Dataset API
 ```
 
@@ -37,7 +37,7 @@ ollama pull qwen2.5:1.5b
 ollama pull bge-small-zh
 ```
 
-Dify 里 Ollama 的 Base URL 填 **`http://host.docker.internal:11434`**，不要填 `localhost`。对话模型 `qwen2.5:1.5b`，知识库 Embedding `bge-small-zh`。
+Dify 里 Ollama 的 Base URL 填 `http://host.docker.internal:11434`，不要填 `localhost`。对话模型 `qwen2.5:1.5b`，知识库 Embedding `bge-small-zh`。
 
 ### Next.js
 
@@ -68,7 +68,6 @@ npm run dev
 
 - 决策记录：[DECISIONS.md](./DECISIONS.md)
 - 20 题测试集：[test-questions.md](./test-questions.md)
-- 原始方案：[../start.md](../start.md)
 
 
 
